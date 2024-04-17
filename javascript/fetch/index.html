@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+    <section>
+        <div class="2xl:container my-8 py-7 ">
+            <div class="w-[90%] grid place-items-center bg-yellow-500 bg-opacity-100  mx-auto py-5">
+                <h1 class="bg-purple-900 p-3 text-white rounded-lg text-center text-4xl font-semibold">Fetch and Display</h1>
+                <div class="displayData  p-5 text-center"></div>
+                <button class="fetchData bg-purple-900 text-white hover:bg-blue-400 font-bold py-2 px-4 mt-3 rounded items-center">Fetch Data</button>
+            
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelector(".fetchData").addEventListener('click', ()=> {
+            
+        
+                const data=fetch("https://baconipsum.com/api/?type=all")//we get promise
+        
+        
+                data.then((response)=>{
+                    console.log(response)
+                    return response.json()
+                }).then((data)=>{
+                    console.log(data)//promise chaining panrom 2 then method use panrom
+        document.querySelector(".displayData").innerHTML=data
+                })
+                .catch((error)=>{
+                    console.log(error)//rejected state ah handle panrom
+                    
+                })
+                })
+                    </script>
+                    
+            
+</body>
+</html>
