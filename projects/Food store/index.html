@@ -8,17 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
     <!--tailwind cdn adding-->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 </head>
+<!--hero section -->
+<section class="hero-bg py-5">
+    <div class="2xl:container h-[100%]">
+        <div class="w-[90%] mx-auto grid grid-cols-1 h-[100%]">
+            <div class="flex flex-col justify-center items-center gap-4 text-center">
+                <h1 class="text-white text-4xl">Get Delicious Food Anytime</h1>
+                <p class="text-white text-xl">Eat Smart & Healthy</p>
+                <div class="">
+                    <button class="bg-[#D0B200] text-white rounded-xl px-5 py-3">View Menu</button>
+                    <button class="bg-transparent border m-4 border-[#D0B200] text-white rounded-xl px-5 py-3">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end hero section -->
 
 <body>
     <!--y to choose us-->
-    <section class=" bg-[#f9fbfe] py-5">
+    <section class="bg-[#f9fbfe] py-5">
         <div class="2xl:container my-4">
-            <div class="w-[90%] mx-auto grid grid-cols-1">
-                <div>
+            <div class="w-[90%] mx-auto grid grid-cols-1 ">
+                <div class="space-y-3">
                     <h1 class="text-[#183b56] text-3xl font-['poppins'] font-bold">Why Choose Us?</h1>
                     <p class="text-sm font-['poppins']">We use both original recipes and classic versions of famous food items.</p>
                 </div>
@@ -29,20 +46,20 @@
         <div class="2xl:container">
             <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <!--card starts-->
-                <div class="bg-white flex flex-col items-center rounded-lg p-2">
+                <div class="bg-white flex flex-col items-center rounded-lg shadow-lg gap-3 p-2">
                     <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png"
                         alt="cardimage">
                     <p>Food Service</p>
                     <p class="text-center">Experience fine dining at the comfort of your home. All our orders are carefully packed and
                         arranged to give you the nothing less than perfect.</p>
                 </div>
-                <div class="bg-white flex flex-col items-center rounded-lg p-2">
+                <div class="bg-white flex flex-col items-center rounded-lg shadow-lg gap-3 p-2">
                     <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/fruits-img.png">
                     <p>Fresh Food</p>
                     <p class="text-center">The Fresh Food group provides fresh-cut fruits and vegetables directly picked from our partner
                         farms and farm houses so that you always get them tree to plate.</p>
                 </div>
-                <div class="bg-white flex flex-col items-center rounded-lg p-2">
+                <div class="bg-white flex flex-col items-center rounded-lg shadow-lg gap-3 p-2">
                     <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/offers-img.png">
                     <p>Best Offers</p>
                     <p class="text-center">Food Coupons & Offers upto <strong>50% OFF</strong> and Exclusive Promo Codes on All Online Food
@@ -65,23 +82,75 @@
             <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
                     <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png" alt="explore image" class="rounded-3xl">
-                    <p>Non-Veg Starters</p>
-                    <p class="text-[#D0B200]">View All</p>
+                    <p class="text-lg font-['Poppins'] text-[#000]">Non-Veg Starters</p>
+                    <p class="text-[#D0B200] flex items-center gap-2">View All
+                        <svg
+      fill="currentColor"
+      viewbox="0 0 16 16"
+      height="1em"
+      width="1em"
+      {...props}
+    >
+      <path
+        fillrule="evenodd"
+        d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+      />
+    </svg>
+                    </p>
                 </div>
                 <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
                     <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-veg-starters-img.png" alt="explore image" class="rounded-3xl">
-                    <p>Veg Starters</p>
-                    <p class="text-[#D0B200]">View All</p>
+                    <p class="text-lg font-['Poppins'] text-[#000]">Veg Starters</p>
+                    <p class="text-[#D0B200] flex items-center gap-2">View All
+                        <svg
+      fill="currentColor"
+      viewbox="0 0 16 16"
+      height="1em"
+      width="1em"
+      {...props}
+    >
+      <path
+        fillrule="evenodd"
+        d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+      />
+    </svg>
+                    </p>
                 </div>
                 <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
                     <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-soup-img.png" alt="explore image" class="rounded-3xl">
-                    <p>Soups</p>
-                    <p class="text-[#D0B200]">View All</p>
+                    <p class="text-lg font-['Poppins'] text-[#000]">Soups</p>
+                    <p class="text-[#D0B200] flex items-center gap-2">View All
+                        <svg
+      fill="currentColor"
+      viewbox="0 0 16 16"
+      height="1em"
+      width="1em"
+      {...props}
+    >
+      <path
+        fillrule="evenodd"
+        d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+      />
+    </svg>
+                    </p>
                 </div>
                 <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
                     <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-grilled-seafood-img.png" alt="explore image" class="rounded-3xl">
-                    <p>Fish & Sea food</p>
-                    <p class="text-[#D0B200]">View All</p>
+                    <p class="text-lg font-['Poppins'] text-[#000]">Fish & Sea food</p>
+                    <p class="text-[#D0B200] flex items-center gap-2">View All
+                        <svg
+      fill="currentColor"
+      viewbox="0 0 16 16"
+      height="1em"
+      width="1em"
+      {...props}
+    >
+      <path
+        fillrule="evenodd"
+        d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+      />
+    </svg>
+                    </p>
                 </div>
                 
             </div>
@@ -95,23 +164,75 @@
             <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
                     <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-hyderabadi-biryani-img.png" alt="explore image" class="rounded-3xl">
-                    <p>Main Course</p>
-                    <p class="text-[#D0B200]">View All</p>
+                    <p class="text-lg font-['Poppins'] text-[#000]">Main Course</p>
+                    <p class="text-[#D0B200] flex items-center gap-2">View All
+                        <svg
+      fill="currentColor"
+      viewbox="0 0 16 16"
+      height="1em"
+      width="1em"
+      {...props}
+    >
+      <path
+        fillrule="evenodd"
+        d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+      />
+    </svg>
+                    </p>
                 </div>
                 <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
                     <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-mushroom-noodles-img.png" alt="explore image" class="rounded-3xl">
-                    <p>Noodles</p>
-                    <p class="text-[#D0B200]">View All</p>
+                    <p class="text-lg font-['Poppins'] text-[#000]">Noodles</p>
+                    <p class="text-[#D0B200] flex items-center gap-2">View All
+                        <svg
+      fill="currentColor"
+      viewbox="0 0 16 16"
+      height="1em"
+      width="1em"
+      {...props}
+    >
+      <path
+        fillrule="evenodd"
+        d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+      />
+    </svg>
+                    </p>
                 </div>
                 <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
                     <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-gluten-img.png" class="rounded-3xl">
-                    <p>Salads</p>
-                    <p class="text-[#D0B200]">View All</p>
+                    <p class="text-lg font-['Poppins'] text-[#000]">Salads</p>
+                    <p class="text-[#D0B200] flex items-center gap-2">View All
+                        <svg
+      fill="currentColor"
+      viewbox="0 0 16 16"
+      height="1em"
+      width="1em"
+      {...props}
+    >
+      <path
+        fillrule="evenodd"
+        d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+      />
+    </svg>
+                    </p>
                 </div>
                 <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
                     <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-coffee-bourbon-img.png" alt="explore image" class="rounded-3xl">
-                    <p>Desserts</p>
-                    <p class="text-[#D0B200]">View All</p>
+                    <p class="text-lg font-['Poppins'] text-[#000]">Desserts</p>
+                    <p class="text-[#D0B200] flex items-center gap-2">View All
+                        <svg
+      fill="currentColor"
+      viewbox="0 0 16 16"
+      height="1em"
+      width="1em"
+      {...props}
+    >
+      <path
+        fillrule="evenodd"
+        d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+      />
+    </svg>
+                    </p>
                 </div>
                 
             </div>
@@ -120,17 +241,121 @@
     <!--explore menu2 ends-->
     
     <!--healthy section start-->
-    <section class="py-5">
+    <section class="bg-[#f9fbfe] py-5">
     <div class="2xl:container">
-        <div class="w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2">
-            <div class="">
-
+        <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+            <div class="flex flex-col justify-center items-center" >
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/healthy-food-plate-img.png" alt="h-img">
             </div>
+            <div class="flex flex-col justify-center items-start gap-4">
+                <h1 class="text-2xl font-['Poppins'] text-[#0d2436] font-semibold">Fresh, Healthy, Organic, Delicious Fruits</h1>
+                <p class="text-base font-['Poppins'] text-[#afbbc4]">Say no to harmful chemicals and go fully organic with our range of fresh fruits and veggies. Pamper your body and your senses with the true and unadulterated gifts from mother nature. with the true and unadulterated gifts from mother nature.</p>
+                <a href="https://ik.imagekit.io/roshan1/video/FoodMunch.mp4?updatedAt=1714466151391" target="_blank"><button class="bg-[#D0B200] text-white rounded-xl px-8 py-4">Watch Video</button></a>
+            </div>
+            
         </div>
 
     </div>
 </section>
     <!--healthy section end-->
+    <!--payment-->
+    <section class="py-5">
+    <div class="2xl:container">
+        <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+            <div class="space-y-4 order-2 md:order-1">
+                <h1 class="text-2xl font-['Poppins'] text-[#0d2436] font-semibold">Delivery and Payment</h1>
+                <p class="text-base font-['Poppins'] text-[#afbbc4]">Enjoy hassle-free payment with the plenitude of payment options available for you. Get live tracking and locate your food on a live map. It's quite a sight to see your food arrive to your door. Plus, you get a 5% discount on every order every time you pay online.</p>
+                <button class="bg-[#D0B200] text-white rounded-xl px-8 py-4">Order Now</button>
+                <div class="flex flex-row gap-4">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" alt="visa" class="h-14">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png" alt="mastercard" class="h-14">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png" alt="paypal" class="h-14">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png" alt="visa" class="h-14">
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center order-1 md:order-2">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png" alt="card-img" class="h-48">
+            </div>
+        </div>
+    </div>
+</section>
+    <!--payment end-->
+    <!--thanks section-->
+    <section class="bg-[#faf7e5] py-5">
+        <div class="2xl:container">
+            <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+                <div class="flex flex-col justify-center items-start space-y-4">
+                    <h1 class="text-2xl font-['Poppins'] text-[#0d2436] font-semibold">Thank you for being a valuable customer to us.</h1>
+                    <p class="text-base font-['Poppins'] text-[#afbbc4]">We have a surprise gift for you</p>
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" alt="card-img" class="h-48 md:hidden">
+                <button class="bg-[#D0B200] text-white rounded-xl px-8 py-4">Redeem Gift</button>
+                </div>
+                <div class="md:flex flex-col justify-center items-center hidden">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" alt="card-img" class="h-48 ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--thanks section end-->
+    <!--follow us-->
+    <section class="py-5">
+        <div class="2xl:container">
+        <div class="w-[90%] mx-auto">
+            <div class="flex flex-col justify-center items-center py-5 gap-4">
+             <h1 class="text-2xl font-['Poppins'] text-[#0d2436] font-semibold">Follow Us</h1>
+             <div class="flex gap-4">
+                <div class="bg-[#D0B200] rounded-full w-14 h-14 flex flex-col justify-center items-center">
+                    <svg
+          viewbox="0 0 1024 1024"
+          fill="white"
+          height="1.9em"
+          width="1.9em"
+          {...props}
+        >
+          <path d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0075-94 336.64 336.64 0 01-108.2 41.2A170.1 170.1 0 00672 174c-94.5 0-170.5 76.6-170.5 170.6 0 13.2 1.6 26.4 4.2 39.1-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 00-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 01-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 01-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850 671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2 33.2-24.3 62.3-54.4 85.5-88.2z" />
+        </svg>
+                 </div>
+                 <div class="bg-[#D0B200] rounded-full w-14 h-14 flex flex-col justify-center items-center">
+                    <svg fill="none" viewBox="0 0 24 24" height="1.9em" width="1.9em" {...props}>
+                        <path
+                          fill="white"
+                          d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 011-1h3v-4h-3a5 5 0 00-5 5v2.01h-2l-.396 3.98h2.396v8.01z"
+                        />
+                      </svg>
+                 </div>
+                 <div class="bg-[#D0B200] rounded-full w-14 h-14 flex flex-col justify-center items-center">
+                    <svg
+                    fill="white"
+                    viewBox="0 0 16 16"
+                    height="1.9em"
+                    width="1.9em"
+                    {...props}
+                  >
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 00-1.417.923A3.927 3.927 0 00.42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 001.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 00-.923-1.417A3.911 3.911 0 0013.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 01-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 01-.92-.598 2.48 2.48 0 01-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 100 1.92.96.96 0 000-1.92zm-4.27 1.122a4.109 4.109 0 100 8.217 4.109 4.109 0 000-8.217zm0 1.441a2.667 2.667 0 110 5.334 2.667 2.667 0 010-5.334z" />
+                  </svg>
+                 </div>
+    
+             </div>
+        </div>
+        
+    </div>
+    </section>
+    <!--follow us end-->
+    <!--footer-->
+    <section class="bg-[#0d2436] py-5">
+        <div class="2xl:container">
+            <div class="w-[90%] mx-auto grid grid-cols-1">
+                <div class="flex flex-col justify-center items-center gap-4 font-['Poppins'] text-white text-center">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png" alt="logo" class="h-24">
+                    <p class="text-[#939cab]">orderfood@foodmunch.com</p>
+                    <p class="text-[#939cab]">FoodMunch Rameswaram-623526</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer end-->
 </body>
 
 </html>
